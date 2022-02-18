@@ -1,44 +1,15 @@
-**English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
-# Actions-OpenWrt
+## 固件下载 [![](https://img.shields.io/badge/-支持设备、编译状态及固件下载-FFFFFF.svg)](#固件下载-)
+<details>
+ <summary><b>&nbsp;&nbsp;&nbsp; X86  设备编译状态及固件下载</b></summary>
+    
+<br/>
+ 
+点击下表中 [![](https://img.shields.io/badge/设备-passing-32CD32.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 即可跳转到该设备固件下载页面
+|   序号    |     X86设备  |   X86设备编译状态及下载链接 |   插件配置   | 备注说明   |
+| :-----------------: | :-------------: |:-----------------: | :-----------------: |  :-----------------: | 
+| 1 |   [![](https://img.shields.io/badge/OpenWrt-x86_(64位)-FFFFFF.svg)](https://github.com/Sagit-chu/openwrt-ci/blob/main/.github/workflows/x86_64.yml)    | [![](https://github.com/Sagit-chu/openwrt-ci/workflows/Build%20X86(64bit)%20OpenWrt/badge.svg)](https://github.com/Sagit-chu/openwrt-ci/actions/workflows/x86_64.yml) |[![](https://img.shields.io/badge/编译-配置-orange.svg)](https://github.com/Sagit-chu/openwrt-ci/blob/main/config/X86/x86-extra.config) |  |  
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
+**提示：**[![](https://img.shields.io/badge/设备-passing-32CD32.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 标志为正常，[![](https://img.shields.io/badge/设备-failing-DC143C.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 或 [![](https://img.shields.io/badge/设备-no_status-A9A9A9.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 不代表所有编译均失败。请点击 [![](https://img.shields.io/badge/设备-状态-32CD32.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 到 **Actions** 进一步查看。
 
-A template for building OpenWrt with GitHub Actions
-
-## Usage
-
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
-
-## Credits
-
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-- [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
-
-## License
-
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
+</details>
