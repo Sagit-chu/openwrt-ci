@@ -1,6 +1,6 @@
 
 ## 固件下载 [![](https://img.shields.io/badge/-支持设备、编译状态及固件下载-FFFFFF.svg)](#固件下载-)
-<details>
+
  <summary><b>&nbsp;&nbsp;&nbsp; X86  设备编译状态及固件下载</b></summary>
     
 <br/>
@@ -12,16 +12,16 @@
 
 **提示：**[![](https://img.shields.io/badge/设备-passing-32CD32.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 标志为正常，[![](https://img.shields.io/badge/设备-failing-DC143C.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 或 [![](https://img.shields.io/badge/设备-no_status-A9A9A9.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 不代表所有编译均失败。请点击 [![](https://img.shields.io/badge/设备-状态-32CD32.svg)](https://github.com/Sagit-chu/openwrt-ci/actions) 到 **Actions** 进一步查看。
 
-</details>
+
 
 
 ## 原版openwrt编译方法（x86）在ubuntu 20.04 ，Debian 10：
-## 0.安装依赖
+### 0.安装依赖
 ```bash
 sudo apt-get update
 sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync build-essential ccache ecj fastjar file g++ gawk gettext git java-propose-classpath libelf-dev libncurses5-dev libncursesw5-dev libssl-dev python python2.7-dev python3 unzip wget python3-distutils python3-setuptools python3-dev rsync subversion swig time xsltproc zlib1g-dev 
 ```
-## 1.首次编译
+### 1.首次编译
 ```bash
 git clone https://github.com/openwrt/openwrt -b openwrt-21.02 openwrt
 cd openwrt
@@ -36,7 +36,7 @@ make menuconfig （此处可以直接下载config文件使用）
 make -j8 download V=s
 make -j1 V=s
 ```
-## 2.第二次及后续编译
+### 2.第二次及后续编译
 ```bash
 cd openwrt
 git pull
@@ -45,7 +45,7 @@ make menuconfig
 make -j8 download
 make -j$(($(nproc) + 1)) V=s
 ```
-## 3.重新配置：
+### 3.重新配置：
 ```bash
 rm -rf ./tmp && rm -rf .config
 make menuconfig
