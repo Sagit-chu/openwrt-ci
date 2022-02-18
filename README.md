@@ -286,8 +286,23 @@ LuCI ---> Applications ---> luci-app-wol   #WOL网络唤醒
 LuCI ---> Applications ---> luci-app-wrtbwmon  #实时流量监测
 LuCI ---> Applications ---> luci-app-xlnetacc  #迅雷快鸟
 LuCI ---> Applications ---> luci-app-zerotier  #ZeroTier内网穿透
+----------------------------------------------------------------------------------------
+转载的时候请注明出处:https://www.right.com.cn/forum/thread-344825-1-1.html
+(感谢，Thanks)
 ```
 
 
-![image](https://user-images.githubusercontent.com/62841189/151914821-9e340cb7-b458-4958-ac28-741b3dec24c1.png)
+
+
+## 鸣谢 [![](https://img.shields.io/badge/-跪谢各大佬-FFFFFF.svg)](#鸣谢-)
+ 
+[OpenWrt 官方库](https://github.com/openwrt/openwrt)
+
+[P3TERX 的 Action 库](https://github.com/P3TERX/Actions-OpenWrt)
+
+[NueXini 的 Packages 库](https://github.com/NueXini/NueXini_Packages)
+
+
+
+
 
