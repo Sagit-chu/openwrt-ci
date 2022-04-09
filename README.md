@@ -25,7 +25,7 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 ```bash
 git clone https://github.com/openwrt/openwrt -b openwrt-21.02 openwrt
 cd openwrt
-sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
+sed -i '$a src-git Sagit_Packages https://github.com/Sagit-chu/packages.git' feeds.conf.default
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 cp /usr/bin/upx staging_dir/host/bin
@@ -300,7 +300,7 @@ LuCI ---> Applications ---> luci-app-zerotier  #ZeroTier内网穿透
 
 [P3TERX 的 Action 库](https://github.com/P3TERX/Actions-OpenWrt)
 
-[NueXini 的 Packages 库](https://github.com/NueXini/NueXini_Packages)
+[Sagit 的 Packages 库](https://github.com/Sagit-chu/packages)
 
 
 
