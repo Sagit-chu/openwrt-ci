@@ -24,9 +24,9 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 ```
 ### 1.首次编译
 ```bash
-git clone https://github.com/openwrt/openwrt -b openwrt-21.02 openwrt
+git clone https://github.com/openwrt/openwrt -b openwrt-22.03 openwrt
 cd openwrt
-sed -i '$a src-git Sagit_Packages https://github.com/Sagit-chu/packages.git' feeds.conf.default
+echo 'src-git Sagit_Packages https://github.com/Sagit-chu/packages.git;small-package' >> feeds.conf.default
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 cp /usr/bin/upx staging_dir/host/bin
