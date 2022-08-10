@@ -1,4 +1,4 @@
-name: Build OpenWrt
+name: Build TrueNAS SCALE
 
 on:
   repository_dispatch:
