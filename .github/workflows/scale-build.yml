@@ -11,8 +11,8 @@ on:
     
 
 env:
-  REPO_URL: https://github.com/Sagit-chu/scale-build
-  REPO_BRANCH: 22.02.3
+  REPO_URL: https://github.com/truenas/scale-build
+  REPO_BRANCH: master
 
 jobs:
   build:
